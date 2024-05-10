@@ -7,46 +7,137 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-      rel="stylesheet"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-      <link rel="stylesheet" href="../SCSS/styles.css">
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../scss/styles.css" />
 
     <title>ohmyfood</title>
   </head>
-
   <body>
+    <!-- header header -->
+    <header class="header-r">
+      <h1 class="logo-h1">ohmyfood</h1>
+      <a href="/index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+    </header>
+    <main class="main-container-menu">
+      <!-- photos -->
+      <div class="photos-r">
+        <img
+          src="../visuels/images/restaurants/stil.jpg"
+          alt="photo des plats du restaurant"
+        />
+      </div>
+      <!-- section menus and food -->
+      <section class="menus-r">
+        <div class="menu">
+          <h2>La note enchantée</h2>
 
-      <!--footer  -->
-      <footer class="footer">
-        <div class="logo-footer">ohmyfood</div>
-        <div class="links-footer">
-          <a href="#"
-            ><i class="fa-solid fa-utensils" aria-hidden="true"></i
-            ><span>Proposer un restaurant</span></a
-          >
-          <a href="#"
-            ><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i
-            ><span>Devenir partenaire</span></a
-          >
-          <a href="#">Mentions légales</a>
-          <a href="mailto:ohmyfood@adress.com">Contact</a>
+          <input type="checkbox" id="checkbox_5" />
+
+          <label for="checkbox_5" class="card-menu-heart-r">
+            <i class="fa-regular fa-heart fa-xl"></i>
+
+            <span class="card-menu-heart-gradient-r">
+              <i class="fa-solid fa-heart fa-xl"></i>
+            </span>
+          </label>
         </div>
-      </footer>
-      <!-- fin footer -->
 
+        <div class="food">
+          <h2>ENTRÉES</h2>
+          <div class="card-food">
+            <h3>Fricassée d'escargots</h3>
+            <p>Au piment d'Espelette</p>
+            <div class="price">25€</div>
+          </div>
+          <div class="card-food">
+            <h3>Foie gras de canard mi-cuit</h3>
+            <p>Et ses copeaux de truffe noire</p>
+            <div class="price">35€</div>
+          </div>
+          <div class="card-food">
+            <h3>Œuf au plat</h3>
+            <p>Assaisonné à la truffe sur lit de caviar</p>
+            <div class="price">20€</div>
+          </div>
+        </div>
 
+        <div class="food">
+          <h2>PLATS</h2>
+          <div class="card-food">
+            <h3>Filet de bœuf aux herbes</h3>
+            <p>Accompagné de sa ribambelle de légumes</p>
+            <div class="price">40€</div>
+          </div>
+          <div class="card-food">
+            <h3>Parmentier de queue de bœuf</h3>
+            <p>À la truffe noire sur sa purée de panais</p>
+            <div class="price">35€</div>
+          </div>
+          <div class="card-food">
+            <h3>Filet de turbot</h3>
+            <p>Aux agrumes</p>
+            <div class="price">44€</div>
+          </div>
+        </div>
 
+        <div class="food">
+          <h2>DESSERTS</h2>
+          <div class="card-food">
+            <h3>Paris-Brest</h3>
+            <p>Revisité</p>
+            <div class="price">18€</div>
+          </div>
+          <div class="card-food">
+            <h3>Macaron au chocolat d'exception</h3>
+            <p>Et glace à la vanille de Madagascar</p>
+            <div class="price">22€</div>
+          </div>
+          <div class="card-food">
+            <h3>Mousse au chocolat</h3>
+            <p>Au piment d'Espelette et à la truffe noire</p>
+            <div class="price">23€</div>
+          </div>
+        </div>
 
+        <!--  le bouton gradient -->
+        <div class="btn-gradient-menu">
+          <a href="#" class="gradient-menu">Commander</a>
+        </div>
+      </section>
+    </main>
 
-
-
-
-
+    <!--footer  -->
+    <footer class="footer">
+      <div class="logo-footer">ohmyfood</div>
+      <div class="links-footer">
+        <a href="#"
+          ><i class="fa-solid fa-utensils" aria-hidden="true"></i
+          ><span>Proposer un restaurant</span></a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i
+          ><span>Devenir partenaire</span></a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:ohmyfood@adress.com">Contact</a>
+      </div>
+    </footer>
+    <!-- fin footer -->
   </body>
 </html>

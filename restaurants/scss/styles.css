@@ -126,13 +126,13 @@ input[type=checkbox] {
   position: relative;
   overflow: hidden;
 }
-
 .card-food h3 {
   font-size: 18px;
 }
 .card-food h3 > p {
   font-size: 12px;
   font-weight: lighter;
+  text-overflow: ellipsis;
 }
 
 .card-food-check {
@@ -145,9 +145,9 @@ input[type=checkbox] {
   position: absolute;
   bottom: 0px;
   left: 83.1%;
-  z-index: 2;
 }
-.card-food-check .fa-circle-check {
+
+.fa-circle-check {
   display: flex;
   align-items: center;
   color: white;

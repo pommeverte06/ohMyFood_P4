@@ -107,15 +107,16 @@ $logo-font: "shrikhand";
 //les coeurs
 .card-menu-heart-r {
   display: flex;
-  justify-content: flex-end;
+justify-content: flex-end;
   position: relative;
   bottom: -20px;
 }
 
+
 .card-menu-heart-gradient-r {
   @extend .card-menu-heart-r;
-  right: 24px;
-  bottom: 11px;
+right: 24px;
+bottom: 11px;
   height: 26.5px;
   overflow: hidden;
 
@@ -152,6 +153,12 @@ $logo-font: "shrikhand";
   padding: 15px;
   position: relative;
   overflow: hidden;
+
+  &:hover{ 
+
+
+
+  }
 }
 .card-food h3 {
   font-size: 18px;
@@ -159,27 +166,38 @@ $logo-font: "shrikhand";
   & > p {
     font-size: 12px;
     font-weight: lighter;
+    text-overflow: ellipsis;
   }
 }
 //check vert
-.card-food-check {
-  display: flex;
-  justify-content: center;
-  height: 69px;
-  background: $tertiaire-color;
-  width: 59px;
-  border-radius: 0 15px 15px 0;
-  position: absolute;
-  bottom: 0px;
-  left: 83.1%;
-  z-index: 2;
+ .card-food-check{
+display: flex;
+justify-content: center;
+height: 69px;
+background: $tertiaire-color;
+width: 59px;
+border-radius: 0 15px 15px 0;
+position: absolute;
+bottom: 0px;
+left: 83.1%;
 
-  .fa-circle-check {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
+ }
+
+ .fa-circle-check{
+  display: flex;
+align-items: center;
+color: white;
+
 }
+
+
+
+
+
+
+
+
+
 
 .price {
   justify-content: flex-end;

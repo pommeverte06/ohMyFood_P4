@@ -24,7 +24,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../SCSS/styles.css" />
+    <link rel="stylesheet" href="../scss/styles.css" />
 
     <title>ohmyfood</title>
   </head>
@@ -38,14 +38,24 @@
       <!-- photos -->
       <div class="photos-r">
         <img
-          src="../images_et_textes_ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          src="../visuels/images/restaurants/jay-wennington.jpg"
+          alt="photo des plats du restaurant"
         />
       </div>
       <!-- section menus and food -->
       <section class="menus-r">
         <div class="menu">
-          <h1>La palette du goût</h1>
-          <i class="fa-regular fa-heart fa-xl"></i>
+          <h2>La palette du goût</h2>
+
+          <input type="checkbox" id="checkbox_5" />
+
+          <label for="checkbox_5" class="card-menu-heart-r">
+            <i class="fa-regular fa-heart fa-xl"></i>
+
+            <span class="card-menu-heart-gradient-r">
+              <i class="fa-solid fa-heart fa-xl"></i>
+            </span>
+          </label>
         </div>
 
         <div class="food">
@@ -53,8 +63,18 @@
           <div class="card-food">
             <h3>Fricassée d'escargots</h3>
             <p>Au piment d'Espelette</p>
-            <div class="price">25€</div>
+            <p class="price">25€</p>
           </div>
+
+          <div class="card-food-check">
+            <i class="fa-solid fa-circle-check fa-lg"></i>
+          </div>
+
+          <!-- <div class="card-food-check">
+  <i class="fa-solid fa-circle-check fa-lg"></i>
+
+
+</div> -->
           <div class="card-food">
             <h3>Foie gras de canard mi-cuit</h3>
             <p>Et ses copeaux de truffe noire</p>
@@ -107,7 +127,7 @@
 
         <!--  le bouton gradient -->
         <div class="btn-gradient-menu">
-          <a href="#a-restaurants" class="gradient-menu">Commander</a>
+          <a href="#" class="gradient-menu">Commander</a>
         </div>
       </section>
     </main>

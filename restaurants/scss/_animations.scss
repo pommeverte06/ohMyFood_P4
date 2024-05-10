@@ -1,0 +1,40 @@
+
+//animations coeurs
+
+input[type="checkbox"] {
+visibility: hidden;
+  }
+  
+  //coeur1
+  #checkbox_1:checked + label .fa-heart,
+  #checkbox_2:checked + label .fa-heart,
+  #checkbox_3:checked + label .fa-heart,
+  #checkbox_4:checked + label .fa-heart, 
+  #checkbox_5:checked + label .fa-heart 
+
+  {
+    display: none;
+  }
+
+
+  #checkbox_1:checked + label .fa-heart:first-child,
+  #checkbox_2:checked + label .fa-heart:first-child,
+  #checkbox_3:checked + label .fa-heart:first-child,
+  #checkbox_4:checked + label .fa-heart:first-child,
+  #checkbox_5:checked + label .fa-heart:first-child
+
+  {
+    display: none;
+  }
+
+ #checkbox_1:checked + label .fa-heart:last-child,
+ #checkbox_2:checked + label .fa-heart:last-child,
+ #checkbox_3:checked + label .fa-heart:last-child,
+ #checkbox_4:checked + label .fa-heart:last-child,
+ #checkbox_5:checked + label .fa-heart:last-child 
+
+ {
+    display: inline-block;
+    opacity: 2;
+  }
+
