@@ -144,7 +144,9 @@ $logo-font: "shrikhand";
   }
 }
 .card-food {
-  width: 100%;
+  @include flex-column;
+  justify-content: space-between;
+  // width: 100%;
   height: 69px;
   background-color: $white-text;
   border-radius: 15px;
@@ -152,7 +154,34 @@ $logo-font: "shrikhand";
   padding: 15px;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+ }
+  .card-food:hover::after{
+content: "\f058";
+position: absolute;
+width: 59px;
+height: 69px;
+background: #99e2d0;
+display: block;
+border-radius: 0 15px 15px 0;
+top: 0;
+right: 0;
+opacity: 0.5;
+font-family: "font awesome 5 free";
+font-size:x-large;
+font-weight: 900;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
 }
+
+
+
 .card-food h3 {
   font-size: 18px;
 
@@ -162,33 +191,34 @@ $logo-font: "shrikhand";
   }
 }
 //check vert
-.card-food-check {
-  display: flex;
-  justify-content: center;
-  height: 69px;
-  background: $tertiaire-color;
-  width: 59px;
-  border-radius: 0 15px 15px 0;
-  position: absolute;
-  bottom: 0px;
-  left: 83.1%;
-  z-index: 2;
+// .card-food-check {
+//   display: flex;
+//   justify-content:center ;
+//   height: 69px;
+//   background: $tertiaire-color;
+//   width: 59px;
+//   border-radius: 0 15px 15px 0;
+//   z-index: 2;
+//   bottom: 200px;
+//   left: 83.1%;
+//   opacity: 0.5;
+//   // position: absolute;
 
-  .fa-circle-check {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-}
+//   .fa-circle-check {
+//     display: flex;
+//     align-items: center;
+//     color: $white-text;
+//   }
+// }
 
 .price {
   justify-content: flex-end;
   display: flex;
-  position: absolute;
   bottom: 12px;
-  left: 305px;
+  left: 300px;
   font-weight: bold;
   font-size: 15px;
+  position: absolute;
   padding-left: 10px;
 }
 //le bouton

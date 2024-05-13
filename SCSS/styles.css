@@ -117,7 +117,9 @@ input[type=checkbox] {
 }
 
 .card-food {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 69px;
   background-color: white;
   border-radius: 15px;
@@ -125,6 +127,28 @@ input[type=checkbox] {
   padding: 15px;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-food:hover::after {
+  content: "\f058";
+  position: absolute;
+  width: 59px;
+  height: 69px;
+  background: #99e2d0;
+  display: block;
+  border-radius: 0 15px 15px 0;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  font-family: "font awesome 5 free";
+  font-size: x-large;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-food h3 {
@@ -135,32 +159,14 @@ input[type=checkbox] {
   font-weight: lighter;
 }
 
-.card-food-check {
-  display: flex;
-  justify-content: center;
-  height: 69px;
-  background: #99e2d0;
-  width: 59px;
-  border-radius: 0 15px 15px 0;
-  position: absolute;
-  bottom: 0px;
-  left: 83.1%;
-  z-index: 2;
-}
-.card-food-check .fa-circle-check {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
 .price {
   justify-content: flex-end;
   display: flex;
-  position: absolute;
   bottom: 12px;
-  left: 305px;
+  left: 300px;
   font-weight: bold;
   font-size: 15px;
+  position: absolute;
   padding-left: 10px;
 }
 
