@@ -143,10 +143,11 @@ $logo-font: "shrikhand";
     padding-bottom: 5px;
   }
 }
+
+//animation des menus
 .card-food {
   @include flex-column;
   justify-content: space-between;
-  // width: 100%;
   height: 69px;
   background-color: $white-text;
   border-radius: 15px;
@@ -156,71 +157,70 @@ $logo-font: "shrikhand";
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-
- }
-  .card-food:hover::after{
-content: "\f058";
-position: absolute;
-width: 59px;
-height: 69px;
-background: #99e2d0;
-display: block;
-border-radius: 0 15px 15px 0;
-top: 0;
-right: 0;
-opacity: 0.5;
-font-family: "font awesome 5 free";
-font-size:x-large;
-font-weight: 900;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  cursor: pointer;
 
 }
+//le chek vert pseudo element
+.card-food::after {
+  content: "\f058";
+  position: absolute;
+  width: 59px;
+  height: 69px;
+  background: #99e2d0;
+  display: block;
+  border-radius: 0 15px 15px 0;
+  top: 0;
+  right: 0px;
+  opacity: 0;
+  font-family: "font awesome 5 free";
+  font-size: x-large;
+  font-weight: 900;
+  color: $white-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-food:hover::after {
+  animation: move-in 500ms ease-in-out alternate-reverse;
+   opacity: 1;
+  @keyframes move-in {
+     from {
+       transform: translateX(0);
+     }
+     to {
+       transform: translateX(100%);
+     }
+   }
+ }
+ 
+
 
 
 
 .card-food h3 {
   font-size: 18px;
+  display: flex;
 
   & > p {
     font-size: 12px;
     font-weight: lighter;
   }
 }
-//check vert
-// .card-food-check {
-//   display: flex;
-//   justify-content:center ;
-//   height: 69px;
-//   background: $tertiaire-color;
-//   width: 59px;
-//   border-radius: 0 15px 15px 0;
-//   z-index: 2;
-//   bottom: 200px;
-//   left: 83.1%;
-//   opacity: 0.5;
-//   // position: absolute;
-
-//   .fa-circle-check {
-//     display: flex;
-//     align-items: center;
-//     color: $white-text;
-//   }
-// }
 
 .price {
   justify-content: flex-end;
   display: flex;
-  bottom: 12px;
-  left: 300px;
   font-weight: bold;
   font-size: 15px;
   position: absolute;
-  padding-left: 10px;
+  padding-left: 13px;
+  display: block;
+  left: 300px;
+  bottom: 12px;
 }
+
 //le bouton
 .btn-gradient-menu {
   @extend .btn-gradient;

@@ -142,6 +142,17 @@ $logo-font: "shrikhand";
 }
 //FONCTIONNEMENT
 
+.fonc-mobil {
+  position: relative;
+  top: 70px;
+  padding: 40px 0 0 17px;
+  background: $white-text;
+
+  @media only screen and (min-width: 1281px) {
+    padding-left: 235px;
+  }
+}
+
 .fonctionnement {
   @include flex-column;
   gap: 25px;
@@ -150,8 +161,11 @@ $logo-font: "shrikhand";
   padding: 50px 0 70px 0;
   background-color: $white-text;
 
-  & > h2 {
-    padding-right: 160px;
+  //media queries desktop
+  @media only screen and (min-width: 1281px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -208,8 +222,17 @@ $logo-font: "shrikhand";
   margin-bottom: 0;
 
   & > h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   }
+
+  @media only screen and (min-width: 1281px){
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin: 50px 0 0 50px;
+  }
+
 }
 //BADGE NOUVEAU
 .badge-new {
@@ -236,7 +259,12 @@ $logo-font: "shrikhand";
   background-color: $white-text;
   width: 100%;
   border-radius: 15px;
-}
+
+  @media only screen and (min-width: 1281px){
+width: 490px;
+  }
+
+  }
 .card-menu img {
   object-fit: cover;
   height: 185px;
@@ -244,7 +272,19 @@ $logo-font: "shrikhand";
   box-sizing: border-box;
   border-radius: 15px 15px 0px 0px;
   object-position: 0px -55px;
-}
+
+
+  @media only screen and (min-width: 1281px){
+
+
+
+
+
+  }
+
+
+ }
+
 
 //card deuxieme restau
 .card-menu-charonne {

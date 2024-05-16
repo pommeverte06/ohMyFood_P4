@@ -37,3 +37,19 @@ visibility: hidden;
     opacity: 2;
   }
 
+  // input[type="checkbox"] {
+  //   display: none;
+  // }
+  
+  // @for $i from 1 through 5 {
+  //   #checkbox_#{$i}:checked + label .fa-heart {
+  //     display: none;
+  //   }
+  
+  //   #checkbox_#{$i}:checked + label .fa-heart:first-child,
+  //   #checkbox_#{$i}:checked + label .fa-heart:last-child {
+  //     display: inline-block;
+  //     opacity: 2;
+  //   }
+  // }
+  

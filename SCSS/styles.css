@@ -129,9 +129,11 @@ input[type=checkbox] {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: flex;
+  cursor: pointer;
 }
 
-.card-food:hover::after {
+.card-food::after {
   content: "\f058";
   position: absolute;
   width: 59px;
@@ -140,8 +142,8 @@ input[type=checkbox] {
   display: block;
   border-radius: 0 15px 15px 0;
   top: 0;
-  right: 0;
-  opacity: 0.5;
+  right: 0px;
+  opacity: 0;
   font-family: "font awesome 5 free";
   font-size: x-large;
   font-weight: 900;
@@ -151,8 +153,22 @@ input[type=checkbox] {
   align-items: center;
 }
 
+.card-food:hover::after {
+  animation: move-in 500ms ease-in-out alternate-reverse;
+  opacity: 1;
+}
+@keyframes move-in {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .card-food h3 {
   font-size: 18px;
+  display: flex;
 }
 .card-food h3 > p {
   font-size: 12px;
@@ -162,12 +178,13 @@ input[type=checkbox] {
 .price {
   justify-content: flex-end;
   display: flex;
-  bottom: 12px;
-  left: 300px;
   font-weight: bold;
   font-size: 15px;
   position: absolute;
-  padding-left: 10px;
+  padding-left: 13px;
+  display: block;
+  left: 300px;
+  bottom: 12px;
 }
 
 .btn-gradient-menu .gradient-menu {
@@ -303,6 +320,18 @@ a {
   transform: opacity;
 }
 
+.fonc-mobil {
+  position: relative;
+  top: 70px;
+  padding: 40px 0 0 17px;
+  background: white;
+}
+@media only screen and (min-width: 1281px) {
+  .fonc-mobil {
+    padding-left: 235px;
+  }
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -312,8 +341,12 @@ a {
   padding: 50px 0 70px 0;
   background-color: white;
 }
-.fonctionnement > h2 {
-  padding-right: 160px;
+@media only screen and (min-width: 1281px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .fonc-group {
@@ -368,6 +401,15 @@ a {
 .restaurants > h2 {
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 1281px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0 0 50px;
+  }
+}
 
 .badge-new {
   position: relative;
@@ -394,6 +436,11 @@ a {
   width: 100%;
   border-radius: 15px;
 }
+@media only screen and (min-width: 1281px) {
+  .card-menu, .card-menu-charonne img, .card-menu-charonne {
+    width: 490px;
+  }
+}
 
 .card-menu img, .card-menu-charonne img {
   -o-object-fit: cover;
@@ -405,7 +452,6 @@ a {
   -o-object-position: 0px -55px;
      object-position: 0px -55px;
 }
-
 .card-menu-charonne {
   display: flex;
   flex-direction: column;
