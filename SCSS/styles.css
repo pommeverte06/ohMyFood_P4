@@ -67,6 +67,12 @@ input[type=checkbox] {
   right: 40px;
 }
 
+@media only screen and (min-width: 1281px) {
+  .menus-r {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -79,6 +85,12 @@ input[type=checkbox] {
   font-weight: 200;
 }
 
+@media only screen and (min-width: 1281px) {
+  .menu {
+    justify-content: center;
+    gap: 30px;
+  }
+}
 .card-menu-heart-r, .card-menu-heart-gradient-r {
   display: flex;
   justify-content: flex-end;
@@ -398,19 +410,31 @@ a {
   margin: 15px;
   margin-bottom: 0;
 }
-.restaurants > h2 {
+.restaurants > .rest-mobil {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1281px) {
   .restaurants {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px 0 0 50px;
+    padding: 0 70px 0 80px;
   }
 }
 
+.rest-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 1281px) {
+  .rest-mobil {
+    display: none;
+  }
+  .rest-desk {
+    display: block;
+    padding: 25px 0 10px 235px;
+  }
+}
 .badge-new {
   position: relative;
 }
@@ -427,6 +451,12 @@ a {
   height: 29px;
   font-weight: bold;
 }
+@media only screen and (min-width: 1281px) {
+  .badge-new {
+    right: 40px;
+    top: -40px;
+  }
+}
 
 .card-menu, .card-menu-charonne img, .card-menu-charonne {
   display: flex;
@@ -439,6 +469,7 @@ a {
 @media only screen and (min-width: 1281px) {
   .card-menu, .card-menu-charonne img, .card-menu-charonne {
     width: 490px;
+    margin: 0px 40px 40px 40px;
   }
 }
 
@@ -452,6 +483,15 @@ a {
   -o-object-position: 0px -55px;
      object-position: 0px -55px;
 }
+@media only screen and (min-width: 1281px) {
+  .card-menu img, .card-menu-charonne img {
+    width: 490px;
+    -o-object-position: 0px -90px;
+       object-position: 0px -90px;
+    margin: 0;
+  }
+}
+
 .card-menu-charonne {
   display: flex;
   flex-direction: column;
@@ -460,6 +500,12 @@ a {
 .card-menu-charonne img {
   -o-object-position: 0px -150px;
      object-position: 0px -150px;
+}
+@media only screen and (min-width: 1281px) {
+  .card-menu-charonne img {
+    -o-object-position: 0px -240px;
+       object-position: 0px -240px;
+  }
 }
 
 .card-menu-content-ch {
@@ -527,4 +573,28 @@ a {
 }
 .footer .fa-handshake-angle {
   margin-right: 5px;
+}
+
+@media only screen and (min-width: 1281px) {
+  .footer {
+    display: flex;
+    height: 114px;
+  }
+  .footer .links-footer {
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    right: 20%;
+    gap: 13px;
+  }
+  .footer .desk-footer {
+    padding-right: 33px;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 38px;
+    right: 40px;
+  }
 }/*# sourceMappingURL=styles.css.map */

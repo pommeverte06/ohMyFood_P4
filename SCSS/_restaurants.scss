@@ -83,17 +83,31 @@ $logo-font: "shrikhand";
   bottom: 75px;
   background-color: $main-back-color;
   border-radius: 33px 33px 0 0;
+
   //le coeur
   .card-menu-heart-gradient {
     bottom: 50.7px;
     right: 40px;
   }
 }
+@media only screen and (min-width: 1281px) {
+  .menus-r {
+    width: 75%;
+    margin: 0 auto;
+  }
+  }
+
+
+
+
+
+
+
+
 
 //nom restaurant
 .menu {
   display: flex;
-  // flex-direction: row;
   justify-content: space-between;
   padding: 26px 15px 0 15px;
   margin-bottom: 40px;
@@ -103,6 +117,18 @@ $logo-font: "shrikhand";
     font-size: 28px;
     font-weight: 200;
   }
+}
+
+@media only screen and (min-width: 1281px){
+
+.menu {
+
+justify-content: center;
+gap: 30px;
+
+
+}
+
 }
 //les coeurs
 .card-menu-heart-r {
@@ -159,7 +185,6 @@ $logo-font: "shrikhand";
   text-overflow: ellipsis;
   display: flex;
   cursor: pointer;
-
 }
 //le chek vert pseudo element
 .card-food::after {
@@ -184,20 +209,16 @@ $logo-font: "shrikhand";
 
 .card-food:hover::after {
   animation: move-in 500ms ease-in-out alternate-reverse;
-   opacity: 1;
+  opacity: 1;
   @keyframes move-in {
-     from {
-       transform: translateX(0);
-     }
-     to {
-       transform: translateX(100%);
-     }
-   }
- }
- 
-
-
-
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
 
 .card-food h3 {
   font-size: 18px;

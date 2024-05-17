@@ -221,19 +221,33 @@ $logo-font: "shrikhand";
   margin: 15px;
   margin-bottom: 0;
 
-  & > h2 {
-  margin-bottom: 20px;
+  & > .rest-mobil {
+    margin-bottom: 20px;
   }
-
-  @media only screen and (min-width: 1281px){
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-margin: 50px 0 0 50px;
+  @media only screen and (min-width: 1281px) {
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 70px 0 80px;
   }
-
 }
+
+.rest-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 1281px) {
+  .rest-mobil {
+    display: none;
+  }
+  .rest-desk {
+    display: block;
+
+    padding: 25px 0 10px 235px;
+  }
+}
+
 //BADGE NOUVEAU
 .badge-new {
   position: relative;
@@ -251,6 +265,11 @@ margin: 50px 0 0 50px;
     height: 29px;
     font-weight: bold;
   }
+
+  @media only screen and (min-width: 1281px) {
+    right: 40px;
+    top: -40px;
+  }
 }
 //les CARDS restaurants
 .card-menu {
@@ -260,11 +279,11 @@ margin: 50px 0 0 50px;
   width: 100%;
   border-radius: 15px;
 
-  @media only screen and (min-width: 1281px){
-width: 490px;
+  @media only screen and (min-width: 1281px) {
+    width: 490px;
+    margin: 0px 40px 40px 40px;
   }
-
-  }
+}
 .card-menu img {
   object-fit: cover;
   height: 185px;
@@ -273,18 +292,12 @@ width: 490px;
   border-radius: 15px 15px 0px 0px;
   object-position: 0px -55px;
 
-
-  @media only screen and (min-width: 1281px){
-
-
-
-
-
+  @media only screen and (min-width: 1281px) {
+    width: 490px;
+    object-position: 0px -90px;
+    margin: 0;
   }
-
-
- }
-
+}
 
 //card deuxieme restau
 .card-menu-charonne {
@@ -294,6 +307,10 @@ width: 490px;
 .card-menu-charonne img {
   @extend .card-menu;
   object-position: 0px -150px;
+
+  @media only screen and (min-width: 1281px) {
+    object-position: 0px -240px;
+  }
 }
 
 .card-menu-content-ch {
@@ -362,5 +379,29 @@ width: 490px;
   }
   .fa-handshake-angle {
     margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .footer {
+    display: flex;
+    height: 114px;
+
+    .links-footer {
+      flex-direction: row;
+      justify-content: end;
+      position: relative;
+      right: 20%;
+      gap: 13px;
+    }
+    .desk-footer {
+      padding-right: 33px;
+    }
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 38px;
+    right: 40px;
   }
 }
