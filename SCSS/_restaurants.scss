@@ -95,15 +95,7 @@ $logo-font: "shrikhand";
     width: 75%;
     margin: 0 auto;
   }
-  }
-
-
-
-
-
-
-
-
+}
 
 //nom restaurant
 .menu {
@@ -119,16 +111,11 @@ $logo-font: "shrikhand";
   }
 }
 
-@media only screen and (min-width: 1281px){
-
-.menu {
-
-justify-content: center;
-gap: 30px;
-
-
-}
-
+@media only screen and (min-width: 1281px) {
+  .menu {
+    justify-content: center;
+    gap: 30px;
+  }
 }
 //les coeurs
 .card-menu-heart-r {
@@ -186,6 +173,7 @@ gap: 30px;
   display: flex;
   cursor: pointer;
 }
+
 //le chek vert pseudo element
 .card-food::after {
   content: "\f058";
@@ -196,7 +184,7 @@ gap: 30px;
   display: block;
   border-radius: 0 15px 15px 0;
   top: 0;
-  right: 0px;
+  right: 0;
   opacity: 0;
   font-family: "font awesome 5 free";
   font-size: x-large;
@@ -205,20 +193,13 @@ gap: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
-.card-food:hover::after {
-  animation: move-in 500ms ease-in-out alternate-reverse;
-  opacity: 1;
-  @keyframes move-in {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  }
-}
+
+
+
+
 
 .card-food h3 {
   font-size: 18px;

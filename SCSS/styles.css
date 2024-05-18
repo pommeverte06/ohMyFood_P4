@@ -29,6 +29,34 @@ input[type=checkbox] {
   opacity: 2;
 }
 
+.anim-check:checked + .card-food::after {
+  opacity: 1;
+  transform: translateX(-100%);
+  animation: move-in 500ms ease-in-out both;
+}
+@keyframes move-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.anim-check:not(:checked) + .card-food::after {
+  opacity: 1;
+  transform: translateX(100%);
+  animation: move-out 500ms ease-in-out both;
+}
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .header-r {
   position: relative;
 }
@@ -154,7 +182,7 @@ input[type=checkbox] {
   display: block;
   border-radius: 0 15px 15px 0;
   top: 0;
-  right: 0px;
+  right: 0;
   opacity: 0;
   font-family: "font awesome 5 free";
   font-size: x-large;
@@ -163,19 +191,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.card-food:hover::after {
-  animation: move-in 500ms ease-in-out alternate-reverse;
-  opacity: 1;
-}
-@keyframes move-in {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
 .card-food h3 {
@@ -232,6 +248,34 @@ input[type=checkbox] {
 #checkbox_5:checked + label .fa-heart:last-child {
   display: inline-block;
   opacity: 2;
+}
+
+.anim-check:checked + .card-food::after {
+  opacity: 1;
+  transform: translateX(-100%);
+  animation: move-in 500ms ease-in-out both;
+}
+@keyframes move-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.anim-check:not(:checked) + .card-food::after {
+  opacity: 1;
+  transform: translateX(100%);
+  animation: move-out 500ms ease-in-out both;
+}
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 * {

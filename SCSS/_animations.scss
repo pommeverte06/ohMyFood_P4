@@ -1,55 +1,78 @@
-
 //animations coeurs
 
 input[type="checkbox"] {
-visibility: hidden;
+  visibility: hidden;
+}
+
+#checkbox_1:checked + label .fa-heart,
+#checkbox_2:checked + label .fa-heart,
+#checkbox_3:checked + label .fa-heart,
+#checkbox_4:checked + label .fa-heart,
+#checkbox_5:checked + label .fa-heart {
+  display: none;
+}
+
+#checkbox_1:checked + label .fa-heart:first-child,
+#checkbox_2:checked + label .fa-heart:first-child,
+#checkbox_3:checked + label .fa-heart:first-child,
+#checkbox_4:checked + label .fa-heart:first-child,
+#checkbox_5:checked + label .fa-heart:first-child {
+  display: none;
+}
+
+#checkbox_1:checked + label .fa-heart:last-child,
+#checkbox_2:checked + label .fa-heart:last-child,
+#checkbox_3:checked + label .fa-heart:last-child,
+#checkbox_4:checked + label .fa-heart:last-child,
+#checkbox_5:checked + label .fa-heart:last-child {
+  display: inline-block;
+  opacity: 2;
+}
+
+
+// @for $i from 1 through 5 {
+//   #checkbox_#{$i}:checked + label .fa-heart {
+//     display: none;
+//   }
+
+//   #checkbox_#{$i}:checked + label .fa-heart:first-child,
+//   #checkbox_#{$i}:checked + label .fa-heart:last-child {
+//     display: inline-block;
+//     opacity: 2;
+//   }
+// }
+
+//-----------------------------------------
+//animations checks verts
+
+//animation  checked move-in depuis la droite
+.anim-check:checked + .card-food::after {
+  opacity: 1;
+  transform: translateX(-100%);
+  animation: move-in 500ms ease-in-out both;
+
+  @keyframes move-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
   }
-  
-  #checkbox_1:checked + label .fa-heart,
-  #checkbox_2:checked + label .fa-heart,
-  #checkbox_3:checked + label .fa-heart,
-  #checkbox_4:checked + label .fa-heart, 
-  #checkbox_5:checked + label .fa-heart 
+}
+//animation unchecked move-out depuis la gauche
+.anim-check:not(:checked) + .card-food::after {
+  opacity: 1;
+  transform: translateX(100%);
+  animation: move-out 500ms ease-in-out both;
 
-  {
-    display: none;
+  @keyframes move-out {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
   }
-
-
-  #checkbox_1:checked + label .fa-heart:first-child,
-  #checkbox_2:checked + label .fa-heart:first-child,
-  #checkbox_3:checked + label .fa-heart:first-child,
-  #checkbox_4:checked + label .fa-heart:first-child,
-  #checkbox_5:checked + label .fa-heart:first-child
-
-  {
-    display: none;
-  }
-
- #checkbox_1:checked + label .fa-heart:last-child,
- #checkbox_2:checked + label .fa-heart:last-child,
- #checkbox_3:checked + label .fa-heart:last-child,
- #checkbox_4:checked + label .fa-heart:last-child,
- #checkbox_5:checked + label .fa-heart:last-child 
-
- {
-    display: inline-block;
-    opacity: 2;
-  }
-
-  // input[type="checkbox"] {
-  //   display: none;
-  // }
-  
-  // @for $i from 1 through 5 {
-  //   #checkbox_#{$i}:checked + label .fa-heart {
-  //     display: none;
-  //   }
-  
-  //   #checkbox_#{$i}:checked + label .fa-heart:first-child,
-  //   #checkbox_#{$i}:checked + label .fa-heart:last-child {
-  //     display: inline-block;
-  //     opacity: 2;
-  //   }
-  // }
-  
+}
+//--------------------------------------------
