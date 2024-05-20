@@ -165,7 +165,7 @@ input[type=checkbox]:checked + .card-food span {
   display: flex;
   flex-direction: column;
   margin: 0 13px 40px 13px;
-  animation: scale-in 1100ms ease-in-out both;
+  animation: scale-in 950ms ease-in-out both;
 }
 .food > h2 {
   font-size: 16px;

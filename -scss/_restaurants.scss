@@ -147,7 +147,7 @@ $logo-font: "shrikhand";
 .food {
   @include flex-column;
   margin: 0 13px 40px 13px;
-  animation: scale-in 1100ms ease-in-out both;
+  animation: scale-in 950ms ease-in-out both;
 
   & > h2 {
     font-size: 16px;
