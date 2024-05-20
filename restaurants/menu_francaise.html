@@ -7,21 +7,173 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-      rel="stylesheet"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-      <link rel="stylesheet" href="SCSS/styles.css">
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../scss/styles.css" />
 
     <title>ohmyfood</title>
   </head>
-
   <body>
+    <!-- header header -->
+    <header class="header-r">
+      <h1 class="logo-h1">ohmyfood</h1>
+      <a href="/index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+    </header>
+    <main class="main-container-menu">
+      <!-- photos -->
+      <div class="photos-r">
+        <img
+          src="../visuels/images/restaurants/toa-heftiba.jpg"
+          alt="photo des plats du restaurant"
+        />
+      </div>
+      <!-- section menus and food -->
+      <section class="menus-r">
+        <div class="menu">
+          <h2>À la française</h2>
 
-    <p class="ohmyfood">test</p>
+          <input type="checkbox" id="checkbox_5" />
+
+          <label for="checkbox_5" class="card-menu-heart-r">
+            <i class="fa-regular fa-heart fa-xl"></i>
+
+            <span class="card-menu-heart-gradient-r">
+              <i class="fa-solid fa-heart fa-xl"></i>
+            </span>
+          </label>
+        </div>
+        <!-- les cartes du restaurants -->
+        <div class="food">
+          <h2>ENTRÉES</h2>
+
+          <input type="checkbox" id="anim-check_1" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_1" class="check">
+              <span class="h3">Tartare de poulpe acidulé</span>
+              <span>Aux zestes d'orange</span>
+              <span class="price">25€</span>
+            </label>
+          </article>
+
+          <input type="checkbox" id="anim-check_2" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_2" class="check">
+              <span class="h3">Velouté de légumes d'antan</span>
+              <span>Carotte, panais, topinambour</span>
+              <span class="price">35€</span>
+            </label>
+          </article>
+
+          <input type="checkbox" id="anim-check_3" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_3" class="check">
+              <span class="h3">Soupe à l'oignon</span>
+              <span>Revisitée</span>
+              <span class="price">20€</span>
+            </label>
+          </article>
+        </div>
+
+        <div class="food">
+          <h2>PLATS</h2>
+
+          <input type="checkbox" id="anim-check_4" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_4" class="check">
+              <span class="h3">Coquilles Saint-Jacques</span>
+              <span>Accompagnées d'une purée de panais</span>
+              <span class="price">40€</span>
+            </label>
+          </article>
+
+          <input type="checkbox" id="anim-check_5" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_5" class="check">
+              <span class="h3">Magret de canard</span>
+              <span>Et parmentier de pommes de terre</span>
+              <span class="price">35€</span>
+            </label>
+          </article>
+
+          <input type="checkbox" id="anim-check_6" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_6" class="check">
+              <span class="h3">Pigeonneau d’Ille-et-Vilaine</span>
+              <span>Sur son lit de gnocchis aux légumes</span>
+              <span class="price">44€</span>
+            </label>
+          </article>
+        </div>
+
+        <div class="food">
+          <h2>DESSERTS</h2>
+
+          <input type="checkbox" id="anim-check_7" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_7" class="check">
+              <span class="h3">Pétales de violettes glacés</span>
+              <span>Et purée de noisettes</span>
+              <span class="price">18€</span>
+            </label>
+          </article>
+
+          <input type="checkbox" id="anim-check_8" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_8" class="check">
+              <span class="h3">Fondant au chocolat</span>
+              <span>Revisité</span>
+              <span class="price">22€</span>
+            </label>
+          </article>
+
+          <input type="checkbox" id="anim-check_9" class="anim-check" />
+          <article class="card-food">
+            <label for="anim-check_9" class="check">
+              <span class="h3">Millefeuille croustillant</span>
+              <span>Myrtilles et pâte d’amande</span>
+              <span class="price">23€</span>
+            </label>
+          </article>
+        </div>
+
+        <!--  le bouton gradient -->
+        <div class="btn-gradient-menu">
+          <a href="#" class="gradient-menu">Commander</a>
+        </div>
+      </section>
+    </main>
+
+    <!--footer  -->
+    <footer class="footer">
+      <div class="logo-footer">ohmyfood</div>
+      <div class="links-footer">
+        <a href="#"
+          ><i class="fa-solid fa-utensils" aria-hidden="true"></i
+          ><span>Proposer un restaurant</span></a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i
+          ><span>Devenir partenaire</span></a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:ohmyfood@adress.com">Contact</a>
+      </div>
+    </footer>
+    <!-- fin footer -->
   </body>
 </html>
