@@ -70,13 +70,10 @@ input[type=checkbox]:checked + .card-food .price,
 input[type=checkbox]:checked + .card-food span {
   transform: translateX(-59px);
 }
-input[type=checkbox]:checked + .card-food .h3, input[type=checkbox]:checked + .card-food span {
+input[type=checkbox]:checked + .card-food .h3,
+input[type=checkbox]:checked + .card-food span {
   transform: translateX(0);
   max-width: 245px;
-}
-input[type=checkbox]:checked + .card-food .h3 {
-  transform: translateX(0);
-  max-width: 240px;
 }
 
 .header-r {
@@ -193,8 +190,13 @@ input[type=checkbox]:checked + .card-food .h3 {
   cursor: pointer;
 }
 
-.card-food .h3,
+.check {
+  overflow: hidden;
+}
+
+.h3,
 span {
+  display: inline-block;
   margin: 0;
   position: relative;
   overflow: hidden;
@@ -323,13 +325,10 @@ input[type=checkbox]:checked + .card-food .price,
 input[type=checkbox]:checked + .card-food span {
   transform: translateX(-59px);
 }
-input[type=checkbox]:checked + .card-food .h3, input[type=checkbox]:checked + .card-food span {
+input[type=checkbox]:checked + .card-food .h3,
+input[type=checkbox]:checked + .card-food span {
   transform: translateX(0);
   max-width: 245px;
-}
-input[type=checkbox]:checked + .card-food .h3 {
-  transform: translateX(0);
-  max-width: 240px;
 }
 
 * {

@@ -89,21 +89,15 @@ input[type="checkbox"] {
 //prix et ellipsis text
 
 input[type="checkbox"]:checked + .card-food {
-
-  
   .h3,
   .price,
   span {
     transform: translateX(-59px);
   }
 
-  .h3, span {
+  .h3,
+  span {
     transform: translateX(0);
     max-width: 245px;
-  }
-
-  .h3 {
-    transform: translateX(0);
-    max-width: 240px;
   }
 }

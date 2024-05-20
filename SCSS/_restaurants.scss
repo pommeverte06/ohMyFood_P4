@@ -175,8 +175,12 @@ $logo-font: "shrikhand";
   //   border-right: 3px solid $tertiaire-color;
 }
 
-.card-food .h3,
+.check {
+  overflow: hidden;
+}
+.h3,
 span {
+  display: inline-block;
   margin: 0;
   position: relative;
   overflow: hidden;
@@ -184,7 +188,6 @@ span {
   text-overflow: ellipsis;
   transition: transform 500ms ease-in-out;
 }
-
 .h3 {
   font-size: 18px;
   font-weight: bold;
