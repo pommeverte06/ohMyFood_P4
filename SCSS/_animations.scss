@@ -2,7 +2,7 @@
 
 input[type="checkbox"] {
   visibility: hidden;
-}
+} //tous les checkbox sont invisibilisés
 
 #checkbox_1:checked + label .fa-heart,
 #checkbox_2:checked + label .fa-heart,
@@ -29,7 +29,6 @@ input[type="checkbox"] {
   opacity: 2;
 }
 
-
 // @for $i from 1 through 5 {
 //   #checkbox_#{$i}:checked + label .fa-heart {
 //     display: none;
@@ -41,6 +40,17 @@ input[type="checkbox"] {
 //     opacity: 2;
 //   }
 // }
+
+//animation entrée
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
 
 //-----------------------------------------
 //animations checks verts
@@ -76,3 +86,24 @@ input[type="checkbox"] {
   }
 }
 //--------------------------------------------
+//prix et ellipsis text
+
+input[type="checkbox"]:checked + .card-food {
+
+  
+  .h3,
+  .price,
+  span {
+    transform: translateX(-59px);
+  }
+
+  .h3, span {
+    transform: translateX(0);
+    max-width: 245px;
+  }
+
+  .h3 {
+    transform: translateX(0);
+    max-width: 240px;
+  }
+}
