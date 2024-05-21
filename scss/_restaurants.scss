@@ -1,5 +1,9 @@
 @import "animations";
 
+h6 {
+  display: none;
+}
+//-----------------------------------------------------
 // variables couleurs
 $primary-color: #9356dc;
 $second-color: #ff79da;
@@ -16,10 +20,6 @@ $heart-color: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 $button: linear-gradient(0deg, $primary-color 0%, $second-color 100%);
 
 $button-shadow: 0px 4px 10px 0px #00000040;
-
-$button-hover: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%),
-  linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15))
-    0px 4px 15px 0px #00000059;
 
 // variable font
 $logo-font: "shrikhand";
@@ -65,6 +65,13 @@ $logo-font: "shrikhand";
   @extend .main-container;
   margin-bottom: 0px;
 }
+@media only screen and (min-width: 1024px) {
+  .main-container-menu {
+    padding: 0;
+    background: $main-back-color;
+  }
+}
+
 //photos restaurants
 .photos-r img {
   //   overflow: hidden;
@@ -75,7 +82,12 @@ $logo-font: "shrikhand";
   width: 100%;
   position: relative;
   bottom: 20px;
-}
+ }
+  @media only screen and (min-width: 1024px) {
+    .photos-r img {
+height: 500px;
+    }
+  }
 //la section des menus
 .menus-r {
   position: relative;
@@ -90,10 +102,11 @@ $logo-font: "shrikhand";
     right: 40px;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .menus-r {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
+    bottom: 60px;
   }
 }
 
@@ -111,10 +124,13 @@ $logo-font: "shrikhand";
   }
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .menu {
-    justify-content: center;
-    gap: 30px;
+    // justify-content: center;
+    // gap: 30px;
+
+    margin-left: 33%;
+    margin-right: 33%;
   }
 }
 //les coeurs
@@ -158,6 +174,13 @@ $logo-font: "shrikhand";
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .food {
+    margin-left: 22%;
+    margin-right: 22%;
+  }
+}
+
 //les menus
 .card-food {
   @include flex-column;
@@ -175,9 +198,6 @@ $logo-font: "shrikhand";
   //   border-right: 3px solid $tertiaire-color;
 }
 
-.check {
-  overflow: hidden;
-}
 .h3,
 span {
   display: inline-block;
@@ -208,8 +228,12 @@ span {
   padding-left: 16px;
   display: block;
   left: 300px;
-  bottom: 12px;
+  bottom: 13px;
   transition: transform 500ms ease-in-out;
+
+  @media only screen and (min-width: 1024px) {
+    left: 540px;
+  }
 }
 
 //le chek vert pseudo element
@@ -244,4 +268,7 @@ span {
     height: 50px;
     text-align: center;
   }
+}
+
+@media only screen and (min-width: 1024px) {
 }

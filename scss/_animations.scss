@@ -86,7 +86,7 @@ input[type="checkbox"] {
   }
 }
 //--------------------------------------------
-//prix et ellipsis text
+//prix et ellipsis textes
 
 input[type="checkbox"]:checked + .card-food {
   .h3,
@@ -99,5 +99,12 @@ input[type="checkbox"]:checked + .card-food {
   span {
     transform: translateX(0);
     max-width: 245px;
+  }
+  @media only screen and (min-width: 1025px) {
+    .h3,
+    span {
+      transform: translateX(0);
+      max-width: none;
+    }
   }
 }

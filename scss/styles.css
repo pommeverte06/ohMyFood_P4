@@ -75,6 +75,17 @@ input[type=checkbox]:checked + .card-food span {
   transform: translateX(0);
   max-width: 245px;
 }
+@media only screen and (min-width: 1025px) {
+  input[type=checkbox]:checked + .card-food .h3,
+  input[type=checkbox]:checked + .card-food span {
+    transform: translateX(0);
+    max-width: none;
+  }
+}
+
+h6 {
+  display: none;
+}
 
 .header-r {
   position: relative;
@@ -92,6 +103,12 @@ input[type=checkbox]:checked + .card-food span {
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .main-container-menu {
+    padding: 0;
+    background: #f6f6f6;
+  }
+}
 .photos-r img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -102,6 +119,11 @@ input[type=checkbox]:checked + .card-food span {
   bottom: 20px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .photos-r img {
+    height: 500px;
+  }
+}
 .menus-r {
   position: relative;
   z-index: 4;
@@ -114,10 +136,11 @@ input[type=checkbox]:checked + .card-food span {
   right: 40px;
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .menus-r {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
+    bottom: 60px;
   }
 }
 .menu {
@@ -132,10 +155,10 @@ input[type=checkbox]:checked + .card-food span {
   font-weight: 200;
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .menu {
-    justify-content: center;
-    gap: 30px;
+    margin-left: 33%;
+    margin-right: 33%;
   }
 }
 .card-menu-heart-r, .card-menu-heart-gradient-r {
@@ -175,6 +198,12 @@ input[type=checkbox]:checked + .card-food span {
   padding-bottom: 5px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .food {
+    margin-left: 22%;
+    margin-right: 22%;
+  }
+}
 .card-food {
   display: flex;
   flex-direction: column;
@@ -188,10 +217,6 @@ input[type=checkbox]:checked + .card-food span {
   overflow: hidden;
   display: flex;
   cursor: pointer;
-}
-
-.check {
-  overflow: hidden;
 }
 
 .h3,
@@ -224,8 +249,13 @@ span {
   padding-left: 16px;
   display: block;
   left: 300px;
-  bottom: 12px;
+  bottom: 13px;
   transition: transform 500ms ease-in-out;
+}
+@media only screen and (min-width: 1024px) {
+  .price {
+    left: 540px;
+  }
 }
 
 .card-food::after {
@@ -330,6 +360,13 @@ input[type=checkbox]:checked + .card-food span {
   transform: translateX(0);
   max-width: 245px;
 }
+@media only screen and (min-width: 1025px) {
+  input[type=checkbox]:checked + .card-food .h3,
+  input[type=checkbox]:checked + .card-food span {
+    transform: translateX(0);
+    max-width: none;
+  }
+}
 
 * {
   margin: 0;
@@ -383,6 +420,11 @@ a {
   padding: 0;
   background-color: #f6f6f6;
 }
+@media only screen and (min-width: 1024px) {
+  .main-container, .main-container-menu {
+    background: white;
+  }
+}
 
 .explore {
   display: flex;
@@ -435,7 +477,7 @@ a {
   padding: 40px 0 0 17px;
   background: white;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .fonc-mobil {
     padding-left: 235px;
   }
@@ -450,7 +492,7 @@ a {
   padding: 50px 0 70px 0;
   background-color: white;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .fonctionnement {
     display: flex;
     flex-direction: row;
@@ -510,12 +552,13 @@ a {
 .restaurants > .rest-mobil {
   margin-bottom: 20px;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .restaurants {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 70px 0 80px;
+    margin: 0;
   }
 }
 
@@ -523,13 +566,16 @@ a {
   display: none;
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .rest-mobil {
     display: none;
   }
   .rest-desk {
     display: block;
-    padding: 25px 0 10px 235px;
+    background: #f6f6f6;
+    padding: 25px 0 20px 235px;
+    position: relative;
+    bottom: 0px;
   }
 }
 .badge-new {
@@ -548,7 +594,7 @@ a {
   height: 29px;
   font-weight: bold;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .badge-new {
     right: 40px;
     top: -40px;
@@ -563,7 +609,7 @@ a {
   width: 100%;
   border-radius: 15px;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .card-menu, .card-menu-charonne img, .card-menu-charonne {
     width: 490px;
     margin: 0px 40px 40px 40px;
@@ -580,7 +626,7 @@ a {
   -o-object-position: 0px -55px;
      object-position: 0px -55px;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .card-menu img, .card-menu-charonne img {
     width: 490px;
     -o-object-position: 0px -90px;
@@ -598,7 +644,7 @@ a {
   -o-object-position: 0px -150px;
      object-position: 0px -150px;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .card-menu-charonne img {
     -o-object-position: 0px -240px;
        object-position: 0px -240px;
@@ -672,7 +718,7 @@ a {
   margin-right: 5px;
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1024px) {
   .footer {
     display: flex;
     height: 114px;
