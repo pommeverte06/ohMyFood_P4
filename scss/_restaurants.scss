@@ -82,12 +82,12 @@ $logo-font: "shrikhand";
   width: 100%;
   position: relative;
   bottom: 20px;
- }
-  @media only screen and (min-width: 1024px) {
-    .photos-r img {
-height: 500px;
-    }
+}
+@media only screen and (min-width: 1024px) {
+  .photos-r img {
+    height: 500px;
   }
+}
 //la section des menus
 .menus-r {
   position: relative;
@@ -107,6 +107,7 @@ height: 500px;
     width: 70%;
     margin: 0 auto;
     bottom: 60px;
+    border-radius: 33px;
   }
 }
 
@@ -126,8 +127,6 @@ height: 500px;
 
 @media only screen and (min-width: 1024px) {
   .menu {
-    // justify-content: center;
-    // gap: 30px;
 
     margin-left: 33%;
     margin-right: 33%;
@@ -271,4 +270,7 @@ span {
 }
 
 @media only screen and (min-width: 1024px) {
+  .btn-gradient-menu {
+    padding: 30px 0 70px 0;
+  }
 }

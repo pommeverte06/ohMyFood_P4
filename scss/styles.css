@@ -141,6 +141,7 @@ h6 {
     width: 70%;
     margin: 0 auto;
     bottom: 60px;
+    border-radius: 33px;
   }
 }
 .menu {
@@ -285,6 +286,11 @@ span {
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .btn-gradient-menu {
+    padding: 30px 0 70px 0;
+  }
+}
 input[type=checkbox] {
   visibility: hidden;
 }
@@ -384,6 +390,85 @@ a {
   color: inherit;
 }
 
+.container-load {
+  background: #f6f6f6;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  animation: stop-loader 100ms 3000ms both;
+}
+
+.loader span {
+  font-size: 30px;
+  font-family: "shrikhand";
+  letter-spacing: 3px;
+  display: inline-block;
+  color: #353535;
+  opacity: 1;
+  animation: opacity 1000ms ease-in-out infinite both;
+}
+.loader span.o-1 {
+  animation-delay: 0ms;
+}
+.loader span.h {
+  animation-delay: 250ms;
+}
+.loader span.m {
+  animation-delay: 500ms;
+}
+.loader span.y {
+  animation-delay: 700ms;
+}
+.loader span.f {
+  animation-delay: 950ms;
+}
+.loader span.o {
+  animation-delay: 1200ms;
+}
+.loader span.d {
+  animation-delay: 1450ms;
+}
+
+@keyframes opacity {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  45% {
+    transform: scale(1.1);
+    opacity: 1;
+    color: #9356dc;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+@keyframes stop-loader {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+#content {
+  opacity: 0;
+  animation: content-in 500ms 3000ms ease-in-out both;
+}
+
+@keyframes content-in {
+  to {
+    opacity: 1;
+  }
+}
 .header {
   gap: 20px;
 }
@@ -393,7 +478,7 @@ a {
   font-weight: 700;
   font-size: 30px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  height: 50px;
+  height: 53px;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -439,7 +524,7 @@ a {
 }
 .explore > p {
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .btn-gradient, .btn-gradient-menu {
@@ -463,11 +548,11 @@ a {
   padding: 14px 18.75px 14px 18.5px;
   transition: transform opacity ease-in-out;
   transition-delay: 70ms;
-  transition-duration: 400ms;
+  transition-duration: 450ms;
 }
 .gradient:hover, .btn-gradient-menu .gradient-menu:hover {
-  opacity: 0.83;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4392156863);
+  opacity: 0.8;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4588235294);
   transform: opacity;
 }
 
@@ -510,7 +595,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   padding-left: 35px;
-  padding-top: 28px;
+  padding-top: 25px;
   position: relative;
   margin-left: 10px;
 }

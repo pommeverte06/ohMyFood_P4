@@ -65,8 +65,94 @@ $logo-font: "shrikhand";
   border-radius: 25px;
   font-size: 16px;
 }
+//-----------------------------------------------------------
+//le loader
 
-//======================================================
+.container-load {
+  background: $main-back-color;
+  box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  animation: stop-loader 100ms 3000ms both;
+}
+
+.loader span {
+  font-size: 30px;
+  font-family: $logo-font;
+  letter-spacing: 3px;
+  display: inline-block;
+  color: #353535;
+  opacity: 1;
+  animation: opacity 1000ms ease-in-out infinite both;
+
+  &.o-1 {
+    animation-delay: 0ms;
+  }
+  &.h {
+    animation-delay: 250ms;
+  }
+  &.m {
+    animation-delay: 500ms;
+  }
+  &.y {
+    animation-delay: 700ms;
+  }
+  &.f {
+    animation-delay: 950ms;
+  }
+  &.o {
+    animation-delay: 1200ms;
+  }
+  &.d {
+    animation-delay: 1450ms;
+  }
+}
+//animation du loader
+@keyframes opacity {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
+  45% {
+    transform: scale(1.1);
+    opacity: 1;
+    color: $primary-color;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+//stop loader
+@keyframes stop-loader {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+//affichage contenu du site
+#content {
+  opacity: 0;
+  animation: content-in 500ms 3000ms ease-in-out both;
+}
+
+@keyframes content-in {
+  to {
+    opacity: 1;
+  }
+}
+// fin animation du loader
 
 //HEADER
 .header {
@@ -78,7 +164,7 @@ $logo-font: "shrikhand";
   font-weight: 700;
   font-size: 30px;
   box-shadow: 0px 2px 4px 0px #00000026;
-  height: 50px;
+  height: 53px;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -123,7 +209,7 @@ $logo-font: "shrikhand";
 
   & > p {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 300;
   }
 }
 //LE BOUTON
@@ -137,11 +223,11 @@ $logo-font: "shrikhand";
   padding: 14px 18.75px 14px 18.5px;
   transition: transform opacity ease-in-out;
   transition-delay: 70ms;
-  transition-duration: 400ms;
+  transition-duration: 450ms;
 
   &:hover {
-    opacity: 0.83;
-    box-shadow: 0px 4px 15px 0px #00000070;
+    opacity: 0.8;
+    box-shadow: 0px 4px 15px 0px #00000075;
     transform: opacity;
   }
 }
@@ -184,7 +270,7 @@ $logo-font: "shrikhand";
   font-weight: 500;
   font-size: 16px;
   padding-left: 35px;
-  padding-top: 28px;
+  padding-top: 25px;
   position: relative;
   margin-left: 10px;
 }
