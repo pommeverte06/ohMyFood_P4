@@ -65,7 +65,7 @@ $logo-font: "shrikhand";
   @extend .main-container;
   margin-bottom: 0px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .main-container-menu {
     padding: 0;
     background: $main-back-color;
@@ -83,7 +83,7 @@ $logo-font: "shrikhand";
   position: relative;
   bottom: 20px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .photos-r img {
     height: 500px;
   }
@@ -102,7 +102,7 @@ $logo-font: "shrikhand";
     right: 40px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .menus-r {
     width: 70%;
     margin: 0 auto;
@@ -110,7 +110,14 @@ $logo-font: "shrikhand";
     border-radius: 33px;
   }
 }
-
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .menus-r {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 33px;
+    bottom: 55px;
+  }
+}
 //nom restaurant
 .menu {
   display: flex;
@@ -125,13 +132,19 @@ $logo-font: "shrikhand";
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .menu {
-
     margin-left: 33%;
     margin-right: 33%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .menu {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
 //les coeurs
 .card-menu-heart-r {
   display: flex;
@@ -173,10 +186,16 @@ $logo-font: "shrikhand";
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .food {
     margin-left: 22%;
     margin-right: 22%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .food {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
@@ -230,8 +249,13 @@ span {
   bottom: 13px;
   transition: transform 500ms ease-in-out;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     left: 540px;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    left: 335px;
+    padding-left: 0;
   }
 }
 
@@ -269,8 +293,13 @@ span {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .btn-gradient-menu {
     padding: 30px 0 70px 0;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .btn-gradient-menu {
+    padding: 20px 0 60px 0;
   }
 }

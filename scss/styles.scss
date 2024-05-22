@@ -72,9 +72,9 @@ $logo-font: "shrikhand";
   background: $main-back-color;
   box-shadow: 0px 4.01px 15.04px 0px #0000001a;
   width: 100%;
-  height: 70px;
+  height: 55px;
   position: fixed;
-  top: 30%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -190,7 +190,11 @@ $logo-font: "shrikhand";
   padding: 0;
   background-color: $main-back-color;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
+    background: $white-text;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
     background: $white-text;
   }
 }
@@ -239,8 +243,13 @@ $logo-font: "shrikhand";
   padding: 40px 0 0 17px;
   background: $white-text;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     padding-left: 235px;
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+display: flex;
+justify-content: center;
+
   }
 }
 
@@ -252,8 +261,7 @@ $logo-font: "shrikhand";
   padding: 50px 0 70px 0;
   background-color: $white-text;
 
-  //media queries desktop
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -315,12 +323,18 @@ $logo-font: "shrikhand";
   & > .rest-mobil {
     margin-bottom: 20px;
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     display: flex;
-    // flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 70px 0 80px;
+    margin: 0;
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin: 0;
   }
 }
@@ -329,7 +343,7 @@ $logo-font: "shrikhand";
   display: none;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .rest-mobil {
     display: none;
   }
@@ -339,6 +353,12 @@ $logo-font: "shrikhand";
     padding: 25px 0 20px 235px;
     position: relative;
     bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .rest-mobil {
+    margin-bottom: 15px;
   }
 }
 
@@ -360,9 +380,14 @@ $logo-font: "shrikhand";
     font-weight: bold;
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     right: 40px;
     top: -40px;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    right: -245px;
+    top: -15px;
   }
 }
 //les CARDS restaurants
@@ -373,9 +398,12 @@ $logo-font: "shrikhand";
   width: 100%;
   border-radius: 15px;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     width: 490px;
     margin: 0px 40px 40px 40px;
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    width: 490px;
   }
 }
 .card-menu img {
@@ -386,7 +414,7 @@ $logo-font: "shrikhand";
   border-radius: 15px 15px 0px 0px;
   object-position: 0px -55px;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     width: 490px;
     object-position: 0px -90px;
     margin: 0;
@@ -402,7 +430,7 @@ $logo-font: "shrikhand";
   @extend .card-menu;
   object-position: 0px -150px;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1025px) {
     object-position: 0px -240px;
   }
 }
@@ -475,7 +503,7 @@ $logo-font: "shrikhand";
     margin-right: 5px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .footer {
     display: flex;
     height: 114px;
