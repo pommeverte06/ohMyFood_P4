@@ -15,8 +15,6 @@ $footer-back-color: #353535;
 $ico-color: #7e7e7e;
 $white-text: white;
 
-$heart-color: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-
 $button: linear-gradient(0deg, $primary-color 0%, $second-color 100%);
 
 $button-shadow: 0px 4px 10px 0px #00000040;
@@ -50,7 +48,6 @@ $logo-font: "shrikhand";
 //HEADER
 .header-r {
   position: relative;
-  //   z-index: 1;
 }
 
 .fa-arrow-left {
@@ -74,8 +71,6 @@ $logo-font: "shrikhand";
 
 //photos restaurants
 .photos-r img {
-  //   overflow: hidden;
-
   object-fit: cover;
   box-sizing: border-box;
   height: 275px;
@@ -211,12 +206,13 @@ $logo-font: "shrikhand";
   position: relative;
   overflow: hidden;
   display: flex;
-  cursor: pointer;
-  // &:hover {
-  //   border-right: 3px solid $tertiaire-color;
 }
 
-.h3,
+.check {
+  cursor: pointer;
+}
+
+.text-h3,
 span {
   display: inline-block;
   margin: 0;
@@ -226,10 +222,10 @@ span {
   text-overflow: ellipsis;
   transition: transform 500ms ease-in-out;
 }
-.h3 {
+.text-h3 {
   font-size: 18px;
   font-weight: bold;
-  display: flex;
+  display: block;
 
   & > span {
     font-size: 12px;
@@ -238,7 +234,6 @@ span {
 }
 
 .price {
-  justify-content: flex-end;
   display: flex;
   font-weight: bold;
   font-size: 15px;
@@ -254,20 +249,19 @@ span {
   }
 
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    left: 335px;
-    padding-left: 0;
+    left: 325px;
   }
 }
 
-//le chek vert pseudo element
+//le chek vert pseudo::element
 .card-food::after {
-  content: "\f058";
+  content: "\f058"; //icone FA
   position: absolute;
   width: 59px;
   height: 69px;
   background: #99e2d0;
   display: block;
-  border-radius: 0 15px 15px 0;
+  // border-radius: 0 15px 15px 0;
   top: 0;
   right: 0;
   opacity: 0;

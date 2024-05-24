@@ -90,7 +90,7 @@ $logo-font: "shrikhand";
   font-family: $logo-font;
   letter-spacing: 3px;
   display: inline-block;
-  color: #353535;
+  color: $footer-back-color;
   opacity: 1;
   animation: opacity 1000ms ease-in-out infinite both;
 
@@ -227,7 +227,7 @@ $logo-font: "shrikhand";
   padding: 14px 18.75px 14px 18.5px;
   transition: transform opacity ease-in-out;
   transition-delay: 70ms;
-  transition-duration: 450ms;
+  transition-duration: 1000ms;
 
   &:hover {
     opacity: 0.8;
@@ -247,9 +247,9 @@ $logo-font: "shrikhand";
     padding-left: 235px;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
-display: flex;
-justify-content: center;
-
+    display: flex;
+    justify-content: center;
+    padding-right: 170px;
   }
 }
 
@@ -317,8 +317,7 @@ justify-content: center;
 .restaurants {
   background-color: $main-back-color;
   padding: 45px 0 60px 0;
-  margin: 15px;
-  margin-bottom: 0;
+  margin: 15px 15px 0 15px;
 
   & > .rest-mobil {
     margin-bottom: 20px;
@@ -335,7 +334,7 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin: 0;
+    padding-top: 20px;
   }
 }
 
@@ -358,7 +357,9 @@ justify-content: center;
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .rest-mobil {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    padding-right: 352px;
   }
 }
 

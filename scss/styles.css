@@ -4,34 +4,34 @@ input[type=checkbox] {
   visibility: hidden;
 }
 
-#checkbox_1:checked + label .fa-heart,
-#checkbox_2:checked + label .fa-heart,
-#checkbox_3:checked + label .fa-heart,
-#checkbox_4:checked + label .fa-heart,
-#checkbox_5:checked + label .fa-heart {
+#checkbox-1:checked + label .fa-heart,
+#checkbox-2:checked + label .fa-heart,
+#checkbox-3:checked + label .fa-heart,
+#checkbox-4:checked + label .fa-heart,
+#checkbox-5:checked + label .fa-heart {
   display: none;
 }
 
-#checkbox_1:checked + label .fa-heart:first-child,
-#checkbox_2:checked + label .fa-heart:first-child,
-#checkbox_3:checked + label .fa-heart:first-child,
-#checkbox_4:checked + label .fa-heart:first-child,
-#checkbox_5:checked + label .fa-heart:first-child {
+#checkbox-1:checked + label .fa-heart:first-child,
+#checkbox-2:checked + label .fa-heart:first-child,
+#checkbox-3:checked + label .fa-heart:first-child,
+#checkbox-4:checked + label .fa-heart:first-child,
+#checkbox-5:checked + label .fa-heart:first-child {
   display: none;
 }
 
-#checkbox_1:checked + label .fa-heart:last-child,
-#checkbox_2:checked + label .fa-heart:last-child,
-#checkbox_3:checked + label .fa-heart:last-child,
-#checkbox_4:checked + label .fa-heart:last-child,
-#checkbox_5:checked + label .fa-heart:last-child {
+#checkbox-1:checked + label .fa-heart:last-child,
+#checkbox-2:checked + label .fa-heart:last-child,
+#checkbox-3:checked + label .fa-heart:last-child,
+#checkbox-4:checked + label .fa-heart:last-child,
+#checkbox-5:checked + label .fa-heart:last-child {
   display: inline-block;
   opacity: 2;
 }
 
 @keyframes scale-in {
   from {
-    transform: scale(0);
+    transform: scale(0%);
   }
   to {
     transform: scale(100%);
@@ -65,18 +65,18 @@ input[type=checkbox] {
   }
 }
 
-input[type=checkbox]:checked + .card-food .h3,
+input[type=checkbox]:checked + .card-food .text-h3,
 input[type=checkbox]:checked + .card-food .price,
 input[type=checkbox]:checked + .card-food span {
   transform: translateX(-59px);
 }
-input[type=checkbox]:checked + .card-food .h3,
+input[type=checkbox]:checked + .card-food .text-h3,
 input[type=checkbox]:checked + .card-food span {
   transform: translateX(0);
   max-width: 245px;
 }
 @media only screen and (min-width: 1025px) {
-  input[type=checkbox]:checked + .card-food .h3,
+  input[type=checkbox]:checked + .card-food .text-h3,
   input[type=checkbox]:checked + .card-food span {
     transform: translateX(0);
     max-width: none;
@@ -237,10 +237,13 @@ h6 {
   position: relative;
   overflow: hidden;
   display: flex;
+}
+
+.check {
   cursor: pointer;
 }
 
-.h3,
+.text-h3,
 span {
   display: inline-block;
   margin: 0;
@@ -251,18 +254,17 @@ span {
   transition: transform 500ms ease-in-out;
 }
 
-.h3 {
+.text-h3 {
   font-size: 18px;
   font-weight: bold;
-  display: flex;
+  display: block;
 }
-.h3 > span {
+.text-h3 > span {
   font-size: 12px;
   font-weight: lighter;
 }
 
 .price {
-  justify-content: flex-end;
   display: flex;
   font-weight: bold;
   font-size: 15px;
@@ -280,8 +282,7 @@ span {
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .price {
-    left: 335px;
-    padding-left: 0;
+    left: 325px;
   }
 }
 
@@ -292,7 +293,6 @@ span {
   height: 69px;
   background: #99e2d0;
   display: block;
-  border-radius: 0 15px 15px 0;
   top: 0;
   right: 0;
   opacity: 0;
@@ -326,34 +326,34 @@ input[type=checkbox] {
   visibility: hidden;
 }
 
-#checkbox_1:checked + label .fa-heart,
-#checkbox_2:checked + label .fa-heart,
-#checkbox_3:checked + label .fa-heart,
-#checkbox_4:checked + label .fa-heart,
-#checkbox_5:checked + label .fa-heart {
+#checkbox-1:checked + label .fa-heart,
+#checkbox-2:checked + label .fa-heart,
+#checkbox-3:checked + label .fa-heart,
+#checkbox-4:checked + label .fa-heart,
+#checkbox-5:checked + label .fa-heart {
   display: none;
 }
 
-#checkbox_1:checked + label .fa-heart:first-child,
-#checkbox_2:checked + label .fa-heart:first-child,
-#checkbox_3:checked + label .fa-heart:first-child,
-#checkbox_4:checked + label .fa-heart:first-child,
-#checkbox_5:checked + label .fa-heart:first-child {
+#checkbox-1:checked + label .fa-heart:first-child,
+#checkbox-2:checked + label .fa-heart:first-child,
+#checkbox-3:checked + label .fa-heart:first-child,
+#checkbox-4:checked + label .fa-heart:first-child,
+#checkbox-5:checked + label .fa-heart:first-child {
   display: none;
 }
 
-#checkbox_1:checked + label .fa-heart:last-child,
-#checkbox_2:checked + label .fa-heart:last-child,
-#checkbox_3:checked + label .fa-heart:last-child,
-#checkbox_4:checked + label .fa-heart:last-child,
-#checkbox_5:checked + label .fa-heart:last-child {
+#checkbox-1:checked + label .fa-heart:last-child,
+#checkbox-2:checked + label .fa-heart:last-child,
+#checkbox-3:checked + label .fa-heart:last-child,
+#checkbox-4:checked + label .fa-heart:last-child,
+#checkbox-5:checked + label .fa-heart:last-child {
   display: inline-block;
   opacity: 2;
 }
 
 @keyframes scale-in {
   from {
-    transform: scale(0);
+    transform: scale(0%);
   }
   to {
     transform: scale(100%);
@@ -387,18 +387,18 @@ input[type=checkbox] {
   }
 }
 
-input[type=checkbox]:checked + .card-food .h3,
+input[type=checkbox]:checked + .card-food .text-h3,
 input[type=checkbox]:checked + .card-food .price,
 input[type=checkbox]:checked + .card-food span {
   transform: translateX(-59px);
 }
-input[type=checkbox]:checked + .card-food .h3,
+input[type=checkbox]:checked + .card-food .text-h3,
 input[type=checkbox]:checked + .card-food span {
   transform: translateX(0);
   max-width: 245px;
 }
 @media only screen and (min-width: 1025px) {
-  input[type=checkbox]:checked + .card-food .h3,
+  input[type=checkbox]:checked + .card-food .text-h3,
   input[type=checkbox]:checked + .card-food span {
     transform: translateX(0);
     max-width: none;
@@ -584,7 +584,7 @@ a {
   padding: 14px 18.75px 14px 18.5px;
   transition: transform opacity ease-in-out;
   transition-delay: 70ms;
-  transition-duration: 450ms;
+  transition-duration: 1000ms;
 }
 .gradient:hover, .btn-gradient-menu .gradient-menu:hover {
   opacity: 0.8;
@@ -607,6 +607,7 @@ a {
   .fonc-mobil {
     display: flex;
     justify-content: center;
+    padding-right: 170px;
   }
 }
 
@@ -673,8 +674,7 @@ a {
 .restaurants {
   background-color: #f6f6f6;
   padding: 45px 0 60px 0;
-  margin: 15px;
-  margin-bottom: 0;
+  margin: 15px 15px 0 15px;
 }
 .restaurants > .rest-mobil {
   margin-bottom: 20px;
@@ -694,7 +694,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin: 0;
+    padding-top: 20px;
   }
 }
 
@@ -716,7 +716,9 @@ a {
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .rest-mobil {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    padding-right: 352px;
   }
 }
 .badge-new {

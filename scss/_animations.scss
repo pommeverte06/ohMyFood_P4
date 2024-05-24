@@ -4,48 +4,36 @@ input[type="checkbox"] {
   visibility: hidden;
 } //tous les checkbox sont invisibilisés
 
-#checkbox_1:checked + label .fa-heart,
-#checkbox_2:checked + label .fa-heart,
-#checkbox_3:checked + label .fa-heart,
-#checkbox_4:checked + label .fa-heart,
-#checkbox_5:checked + label .fa-heart {
+#checkbox-1:checked + label .fa-heart,
+#checkbox-2:checked + label .fa-heart,
+#checkbox-3:checked + label .fa-heart,
+#checkbox-4:checked + label .fa-heart,
+#checkbox-5:checked + label .fa-heart {
   display: none;
 }
 
-#checkbox_1:checked + label .fa-heart:first-child,
-#checkbox_2:checked + label .fa-heart:first-child,
-#checkbox_3:checked + label .fa-heart:first-child,
-#checkbox_4:checked + label .fa-heart:first-child,
-#checkbox_5:checked + label .fa-heart:first-child {
+#checkbox-1:checked + label .fa-heart:first-child,
+#checkbox-2:checked + label .fa-heart:first-child,
+#checkbox-3:checked + label .fa-heart:first-child,
+#checkbox-4:checked + label .fa-heart:first-child,
+#checkbox-5:checked + label .fa-heart:first-child {
   display: none;
 }
 
-#checkbox_1:checked + label .fa-heart:last-child,
-#checkbox_2:checked + label .fa-heart:last-child,
-#checkbox_3:checked + label .fa-heart:last-child,
-#checkbox_4:checked + label .fa-heart:last-child,
-#checkbox_5:checked + label .fa-heart:last-child {
+#checkbox-1:checked + label .fa-heart:last-child,
+#checkbox-2:checked + label .fa-heart:last-child,
+#checkbox-3:checked + label .fa-heart:last-child,
+#checkbox-4:checked + label .fa-heart:last-child,
+#checkbox-5:checked + label .fa-heart:last-child {
   display: inline-block;
   opacity: 2;
 }
-
-// @for $i from 1 through 5 {
-//   #checkbox_#{$i}:checked + label .fa-heart {
-//     display: none;
-//   }
-
-//   #checkbox_#{$i}:checked + label .fa-heart:first-child,
-//   #checkbox_#{$i}:checked + label .fa-heart:last-child {
-//     display: inline-block;
-//     opacity: 2;
-//   }
-// }
 
 //animation entrée
 
 @keyframes scale-in {
   from {
-    transform: scale(0);
+    transform: scale(0%);
   }
   to {
     transform: scale(100%);
@@ -89,19 +77,19 @@ input[type="checkbox"] {
 //prix et ellipsis textes
 
 input[type="checkbox"]:checked + .card-food {
-  .h3,
+  .text-h3,
   .price,
   span {
     transform: translateX(-59px);
   }
 
-  .h3,
+  .text-h3,
   span {
     transform: translateX(0);
     max-width: 245px;
   }
   @media only screen and (min-width: 1025px) {
-    .h3,
+    .text-h3,
     span {
       transform: translateX(0);
       max-width: none;
