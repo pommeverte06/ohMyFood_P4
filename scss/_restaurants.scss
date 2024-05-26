@@ -253,7 +253,7 @@ span {
   }
 }
 
-//le chek vert pseudo::element
+//le check vert pseudo::element
 .card-food::after {
   content: "\f058"; //icone FA
   position: absolute;
@@ -272,8 +272,20 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
-}
+  // transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 //le bouton
 .btn-gradient-menu {
@@ -290,6 +302,7 @@ span {
 @media only screen and (min-width: 1025px) {
   .btn-gradient-menu {
     padding: 30px 0 70px 0;
+    border-radius: 33px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {

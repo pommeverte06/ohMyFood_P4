@@ -303,7 +303,6 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
 .btn-gradient-menu .gradient-menu {
@@ -315,6 +314,7 @@ span {
 @media only screen and (min-width: 1025px) {
   .btn-gradient-menu {
     padding: 30px 0 70px 0;
+    border-radius: 33px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -562,6 +562,18 @@ a {
   font-size: 18px;
   font-weight: 300;
 }
+@media only screen and (min-width: 1025px) {
+  .explore {
+    background: #f6f6f6;
+    padding-bottom: 35px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .explore {
+    background: #f6f6f6;
+    padding-bottom: 35px;
+  }
+}
 
 .btn-gradient, .btn-gradient-menu {
   display: flex;
@@ -571,6 +583,11 @@ a {
   align-items: center;
   margin-top: 30px;
   height: 50px;
+}
+@media only screen and (min-width: 1025px) {
+  .btn-gradient, .btn-gradient-menu {
+    background-color: #f6f6f6;
+  }
 }
 
 .gradient, .btn-gradient-menu .gradient-menu {
@@ -601,6 +618,7 @@ a {
 @media only screen and (min-width: 1025px) {
   .fonc-mobil {
     padding-left: 235px;
+    padding-top: 0;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -608,6 +626,7 @@ a {
     display: flex;
     justify-content: center;
     padding-right: 170px;
+    padding-top: 0;
   }
 }
 
@@ -695,6 +714,7 @@ a {
     align-items: center;
     gap: 15px;
     padding-top: 20px;
+    margin: 0;
   }
 }
 

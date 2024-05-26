@@ -215,12 +215,24 @@ $logo-font: "shrikhand";
     font-size: 18px;
     font-weight: 300;
   }
+  @media only screen and (min-width: 1025px) {
+    background: $main-back-color;
+    padding-bottom: 35px;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    background: $main-back-color;
+    padding-bottom: 35px;
+  }
 }
 //LE BOUTON
 .btn-gradient {
   @include btn-gradient;
   margin-top: 30px;
   height: 50px;
+  @media only screen and (min-width: 1025px) {
+    background-color: $main-back-color;
+  }
 }
 .gradient {
   @include gradient;
@@ -245,11 +257,13 @@ $logo-font: "shrikhand";
 
   @media only screen and (min-width: 1025px) {
     padding-left: 235px;
+    padding-top: 0;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     display: flex;
     justify-content: center;
     padding-right: 170px;
+    padding-top: 0;
   }
 }
 
@@ -335,6 +349,7 @@ $logo-font: "shrikhand";
     align-items: center;
     gap: 15px;
     padding-top: 20px;
+    margin: 0;
   }
 }
 
